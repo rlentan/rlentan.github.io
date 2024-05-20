@@ -1,0 +1,228 @@
+@font-face{
+	font-family:"UmbaSoft";
+	src:url(UmbaSoft.otf);
+}
+.menu{/*the literal code for the menu*/
+	background-color: #333333;
+	overflow:hidden;/*if stuff overflows, it hides the content that overflows*/
+	position:sticky; /*cant shift position*/
+	top:0; /*forces it to stay at the topmost without a margin since it is 0*/
+	width:100%;/*this sets it to the whole width of the screen*/
+	padding:0;
+	z-index:100;
+	font-family:UmbaSoft;
+}
+
+.menu a{ /*styles how the text appears*/
+	display:block;
+	color:white;
+	background-color: #333333;/*gray color btw*/
+	text-decoration:none;/*removes that underline bullshit in hyperlinks and that color change*/
+	padding:15px;
+	padding-bottom:21px;
+	text-align:center;
+	float:right;/*forces the names to be compacted to one side*/
+	font-size: calc(6px + 0.75vw);
+	font-family:UmbaSoft;
+}
+.menu a:hover{/*makes it highlight a different color */
+	background-color: #010101;
+}
+.menu form{
+	display:block;
+	padding:15px;
+	float:right;
+	color:white;
+	font-size: calc(6px + 0.75vw);/*scalable font size*/
+	font-family:UmbaSoft;
+}
+.menu input {
+	font-size: calc(6px + 0.75vw);
+	font-family:UmbaSoft;
+}
+#fix{/*fixes the Background to constantly cover the whole thing, wont add more of itself*/
+	background-size:cover; 
+	margin:0 auto;
+}
+
+.content{/*an infinitely extending white block to place all your stuff in. might need to change margin around*/
+	background-color:white;
+	display:block;
+	margin-left:8%;
+	margin-bottom:1%;
+	margin-top:1%;
+	padding:20px;
+	width:55vw;
+	font-size: calc(6px + 0.75vw);
+	font-family:UmbaSoft;
+}
+@media only screen and (min-width:1440px){/*at 1440p, vw doesn't work in the same way in other resolutions, so you change the vw that works*/
+	.content{
+		width:57vw;
+	}
+}
+/*@media only screen and (min-width:1441px),(max-width:2559px){ Make a script for the div block to also scale exponentially, it just stays put then suddenly grows when at 2560p
+	.content{
+		width:calc(57vw + 1.7778vw);            			just javascript this later, 1.7778% of current res is the exp. growth rate
+	}
+}*/
+@media only screen and (min-width:2560px){/*same thing, but for 2560p*/
+	.content{
+		width:60vw;
+	}
+}
+.news{/*News Sidebar on the right side*/
+	background-color:white;
+	display:block;
+	margin-right:2.5%;
+	margin-bottom:1%;
+	margin-top:1%;
+	padding:20px;
+	float:right;
+	width:24.5vw;
+	clear:right;
+	font-size: calc(6px + 0.75vw);
+	font-family:UmbaSoft;
+}
+.sidebar{
+	background-color:white;
+	display:block;
+	margin-top:1%;
+	width:7vw;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	bottom:0;
+	font-size: 80%;
+	text-decoration:none;
+	font-family:UmbaSoft;
+}
+.sidebar a{
+	display:block;
+	padding-bottom:5px;
+	padding-top:5px;
+	text-decoration:none; 
+	overflow:auto;
+}
+.sidebar ul{
+	position:relative;
+	padding-left:25px;
+	min-width:3vw;
+	list-style-type:none;
+	text-decoration:none;
+	overflow:hidden;
+}
+#id{
+	display:none;
+}
+.footer{
+	background-color: #333333;
+	overflow:hidden;/*if stuff overflows, it hides the content that overflows*/
+	bottom:0; /*forces it to stay at the bottommost without a margin since it is 0*/
+	width:100%;/*this sets it to the whole width of the screen*/
+	height:100%;
+	margin:0;
+	padding:0;
+	clear:both;
+}
+.footer p{
+	padding-left:15px;
+	color:white;
+	font-size: calc(6px + 0.75vw);
+	font-family:UmbaSoft;
+}
+.header{
+	padding:15px;
+	display:block;
+	background-color:white;
+	margin:15px;
+}
+.page2{
+	margin-top:1%;
+	margin-bottom:1%;
+	margin-right:2%;
+	background-color:white;
+	margin-left:9%;
+	display:block;
+	padding:20px;
+	overflow:hidden;
+	font-size: calc(6px + 0.75vw);
+	font-family:UmbaSoft;
+}
+.page2 iframe{
+	display:block;
+	overflow:hidden;
+	width:50%;
+	height:1%;
+	float:right;
+	clear:both;
+	border:none;
+}
+.page3{
+	margin-top:1%;
+	margin-bottom:1%;
+	margin-right:2%;
+	background-color:white;
+	margin-left:9%;
+	display:block;
+	padding:20px;
+	overflow:hidden;
+	font-size: calc(6px + 0.75vw);
+	font-family:UmbaSoft;
+}
+.page3 iframe{
+	display:block;
+	overflow:hidden;
+	width:50%;
+	float:right;
+	clear:both;
+	border:none;
+}
+.page3 table,th,td,tr{
+	border:1px solid black;
+}
+.page4 {
+	display:block;
+	overflow:hidden;
+	margin:2%;
+	background-color:white;
+	padding:20px;
+	font-size: calc(6px + 0.75vw);
+	font-family:UmbaSoft;
+}
+.page4 form{
+	text-align:center;
+}
+.page4 input{
+	width:32vw;
+	height:4vh;
+}
+.page4 img{
+	margin:5%;
+	width:35%;
+	height:35%;
+	clear:both;
+	float:left;
+}
+.page5{
+	display:block;
+	overflow:hidden;
+	margin:2%;
+	background-color:white;
+	padding:20px;
+	font-size: calc(6px + 0.75vw);
+	font-family:UmbaSoft;
+	height:70vh;
+}
+.page5 p{
+	font-size:calc(8px + 0.75vw);
+}
+.box{/*Small content inside content*/
+	background-color:#DEDEDE;
+	display:block;
+	padding:20px;
+	margin:20px;
+	float:right;
+	width:25%;
+	clear:right;
+}
